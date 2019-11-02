@@ -5,7 +5,13 @@ const fs = require("fs");
 runLoaders({
     resource: path.join(__dirname, "src/demo.txt"),
     loaders: [
-        path.join(__dirname, "src/raw-loader.js")
+        {
+            loader: path.join(__dirname, "src/raw-loader.js"),
+            options: {
+                name: "test"
+            }
+
+        }
     ],
     context: {
         minimize: true
