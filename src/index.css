@@ -1,0 +1,8 @@
+
+.one {
+    background: url(./images/man.jpg?__sprite);
+}
+
+.two {
+    background: url(./images/cute.jpg?__sprite);
+}
